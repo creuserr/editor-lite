@@ -10,10 +10,10 @@ class EditorLite {
     this._init();
     this.$lines = document.createElement("div");
     this.$lines.setAttribute("data-editor-lite", "lines"); 
-    this.$lines.style.cssText = `height: calc(100% - 20px); padding: 10px; padding-top: 8px; padding-bottom: 8px; background-color: var(--editorlite-background, #F8F8F8); border-right: 1px solid var(--editorlite-lineborder, rgba(0,0,0,0.05)); padding-left: 9px; margin: 0; display: flex; flex-direction: column; font-family: monospace; font-size: 14px; color: rgba(0,0,0,0.3); overflow: scroll; padding-top: 0; padding-bottom: 0; pointer-events: none;`;
+    this.$lines.style.cssText = `height: 100%; padding: 10px; padding-top: 8px; padding-bottom: 8px; background-color: var(--editorlite-background, #F8F8F8); border-right: 1px solid var(--editorlite-lineborder, rgba(0,0,0,0.05)); padding-left: 9px; margin: 0; display: flex; flex-direction: column; font-family: monospace; font-size: 14px; color: rgba(0,0,0,0.3); overflow: scroll; padding-top: 0; padding-bottom: 0; pointer-events: none;`;
     this.$main.append(this.$lines);
     this.$code = document.createElement("div");
-    this.$code.style.cssText = `position: relative; flex-grow: 1; width: calc(100% - 16px - 20px); height: calc(100% - 20px); margin: 0; padding; 0; background-color: var(--editorlite-background, #FAFAFA);`;
+    this.$code.style.cssText = `position: relative; flex-grow: 1; width: calc(100% - 16px - 20px); height: 100%; margin: 0; padding; 0; background-color: var(--editorlite-background, #FAFAFA);`;
     this.$main.append(this.$code);
     this.$pre = document.createElement("pre");
     this.$pre.style.cssText = `margin: 0; font-family: monospace; font-size: 14px; width: 100%;`;
